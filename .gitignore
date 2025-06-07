@@ -22,3 +22,35 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+ 
+ # === Java ===
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+
+# === Maven ===
+/target/
+
+# === Logs ===
+*.log
+hs_err_pid*
+replay_pid*
+
+# === Eclipse ===
+.classpath
+.project
+.settings/
+
+# === OS generated ===
+.DS_Store
+Thumbs.db
+
+# === Environment / Config ===
+src/main/resources/application.properties
+
+# === Others ===
+*.iml
+.idea/
