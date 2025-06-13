@@ -8,10 +8,17 @@ public class User {
     
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+	
+	@Column(unique = true, nullable = false)
+	private String email;
+	
+	@Column(nullable = false)
+	private String password;
+	
+	@Column(nullable = false)
     private String username;
-    private String password;
-    private String email;
     
+    // Getters and Setters
     
     public Long getId() {
 		return id;
@@ -38,5 +45,4 @@ public class User {
 		this.email = email;
 	}
 
-    // Getters and Setters
 }
